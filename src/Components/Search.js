@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const Search = ({onSearch}) => {
     const [searchText, setSearchText] = useState('');
@@ -11,14 +13,17 @@ const Search = ({onSearch}) => {
     alert(searchText);
   };
   return (
-    <div className="rounded-lg border-2 w-1/2 border-orange-600">
+    <div className="flex items-center border rounded-md overflow-hidden w-3/5">
       <input
+        className="bg-red-500 py-2 px-4 outline-none w-3/5"
         type="text"
-        placeholder='Search for products, brands and categories'
+        placeholder='Search...'
         value={searchText}
-        onChange={ (e) => handleInputChange(e)}
+        onChange={(e) => handleInputChange(e)}
       />
-      <button onClick={ () => handleSearch()} className="text-right font-semibold bg-red "><img src="/img/searchIcon.png" alt="search" class="w-3 h-3 pr-16"/></button>
+      <button onClick={() => handleSearch(onSearch)} className="bg-yellow-500 hover:bg-yellow-400 text-white px-2 py-2 ml-auto">
+        <FontAwesomeIcon icon={faSearch}/>
+      </button>
     </div>
   );
 }
