@@ -2,11 +2,10 @@ import Header from "./Components/Header";
 import Search from "./Components/Search";
 import Main from "./Components/Main";
 import Adverts from "./Components/Adverts";
+import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import Itemsdisplay from "./Components/Itemsdisplay";
 
-library.add(faSearch);
 
 function App() {
   const handleSearch = (query) => {
@@ -14,11 +13,13 @@ function App() {
     console.log(`Searching for: ${query}`);
   }
   return (
-    <div className="bg-blue-600">
+    <div className="bg-Snow-600">
       <Header />
-      {<Search onSearch={handleSearch}/>}
+      <Search onSearch={handleSearch}/>
       <Adverts />
       <Main />
+      <Itemsdisplay />
+      <Contact />
       <Footer/>
     </div>
   );

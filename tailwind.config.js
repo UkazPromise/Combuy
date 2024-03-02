@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export const content = [];
+export const content = ["./src/**/*.{html,js}"];
 export const theme = {
   colors: {
     primary: "#ff0000",

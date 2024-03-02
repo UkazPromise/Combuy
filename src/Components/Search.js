@@ -13,9 +13,9 @@ const Search = ({onSearch}) => {
     alert(searchText);
   };
   return (
-    <div className="flex items-center border rounded-md overflow-hidden w-3/5">
+    <div className="flex items-center border rounded-md overflow-hidden w-2/5">
       <input
-        className="bg-red-500 py-2 px-4 outline-none w-3/5"
+        className="py-2 px-4 outline-none w-3/5"
         type="text"
         placeholder='Search...'
         value={searchText}
