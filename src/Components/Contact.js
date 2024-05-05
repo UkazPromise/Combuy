@@ -28,7 +28,7 @@ const Contact = () => {
         });
     };
   return (
-    <div className="container w-full mt-6 flex justify-center items-center bg-gray-500">
+    <div className="hero h-48 bg-cover bg-orange-500 h-screen flex flex-col justify-center items-center">
         <p className="mr-4">Contact Us on</p>
         <div className="flex space-x-4">
           <a href="#" target="_blank" rel="noopener noreferrer">
