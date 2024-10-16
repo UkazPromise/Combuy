@@ -7,32 +7,32 @@ const imagesWithHeadings = [
   {
     imageUrl: 'img/WhatsApp Image 2024-02-26 at 01.58.11_b58fcbb0.jpg',
     width: 'w-24',
-    height: 'h-32'
+    height: 'h-24'
+  },
+  {
+    imageUrl: 'img/WhatsApp Image 2024-04-26 at 21.01.28_82234ddf.jpg',
+    width: 'w-24',
+    height: 'h-24'
+  },
+  {
+    imageUrl: 'img/WhatsApp Image 2024-04-26 at 21.01.29_da93e774.jpg',
+    width: 'w-24',
+    height: 'h-24'
   },
   {
     imageUrl: 'img/WhatsApp Image 2024-02-26 at 01.58.11_b58fcbb0.jpg',
     width: 'w-24',
-    height: 'h-32'
+    height: 'h-24'
   },
   {
     imageUrl: 'img/WhatsApp Image 2024-02-26 at 01.58.11_b58fcbb0.jpg',
     width: 'w-24',
-    height: 'h-32'
+    height: 'h-24'
   },
   {
     imageUrl: 'img/WhatsApp Image 2024-02-26 at 01.58.11_b58fcbb0.jpg',
     width: 'w-24',
-    height: 'h-32'
-  },
-  {
-    imageUrl: 'img/WhatsApp Image 2024-02-26 at 01.58.11_b58fcbb0.jpg',
-    width: 'w-24',
-    height: 'h-32'
-  },
-  {
-    imageUrl: 'img/WhatsApp Image 2024-02-26 at 01.58.11_b58fcbb0.jpg',
-    width: 'w-24',
-    height: 'h-32'
+    height: 'h-24'
   }
 ]
 
@@ -49,14 +49,14 @@ const Carousel = () => {
   };
 
   return (
-    <div className='w-full h-full'>
+    <div className='w-full h-24'>
       <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
         {imagesWithHeadings.map((imageData, index) => (
           <div className='w-full h-96 flex items-center' key={index}>
               <img src={imageData.imageUrl} alt={`Slide ${index + 1}`} className="rounded-lg h-full w-full" />
             <div >
               <h3 className="text-lg">{imageData.heading}</h3>
-            </div>
+            </div>                                                                                                                 
           </div>
         ))}
       </Slider>

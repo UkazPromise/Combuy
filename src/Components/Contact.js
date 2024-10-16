@@ -28,31 +28,31 @@ const Contact = () => {
         });
     };
   return (
-    <div className="hero h-48 bg-cover bg-orange-500 h-screen flex flex-col justify-center items-center">
-        <p className="mr-4">Contact Us on</p>
-        <div className="flex space-x-4">
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <h1>Via Email</h1>
-            <p className="mr-4">ukazpromise@gmail.com</p>
-            <FontAwesomeIcon icon={faEnvelope} />
+    <div className="hero h-48 bg-cover bg-orange-500 flex justify-center items-center w-full">
+        <p className="mr-4 text-white font-bold">Contact Us on</p>
+        <div className="flex mx-12">
+          <a href="#" target="_blank" rel="noopener noreferrer" className='mx-6'>
+            <h1 className='text-white font-semibold'>Via Email</h1>
+            <p className="mr-4 text-white">ukazpromise@gmail.com</p>
+            <FontAwesomeIcon icon={faEnvelope} className='w-10 h-10'/>
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <h1>Phone Support</h1>
-            <p className="mr-4">07056674363</p>
-            <FontAwesomeIcon icon={faPhone} />
+          <a href="#" target="_blank" rel="noopener noreferrer" className='mx-6'>
+            <h1 className='text-white font-semibold'>Phone Support</h1>
+            <p className="mr-4 text-white">07056674363</p>
+            <FontAwesomeIcon icon={faPhone} className='w-10 h-10'/>
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <h1>Chat Us On Whatsapp</h1>
-            <p className="mr-4">07056674363</p>
-            <FontAwesomeIcon icon={faWhatsapp} />
+          <a href="#" target="_blank" rel="noopener noreferrer" className='mx-6'>
+            <h1 className='text-white font-semibold'>Chat Us On Whatsapp</h1>
+            <p className="mr-4 text-white">07056674363</p>
+            <FontAwesomeIcon icon={faWhatsapp} className='w-10 h-10'/>
           </a>
           <input
-            className="py-2 px-4 outline-none"
+            className="w-64 h-10"
             type="text"
-            placeholder="Email Us"
+            placeholder="Your Email"
             />
             <a href="#" target="_blank">
-              <button onClick={handleSubscription}>Subscribe</button>
+              <button onClick={handleSubscription} className="py-2 px-4 outline-none rounded-lg rounded-l bg-pink text-white">Subscribe</button>
             </a>
         </div>
     </div>
