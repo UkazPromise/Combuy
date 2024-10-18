@@ -25,10 +25,10 @@ const ItemDetails = () => {
 
   return (
     <div className="p-6 mt-32 mb-11 flex w-5/6 h-96 bg-white">
-      <span className="image-container">
+      <span className="image-container bg-pink-400 border mx-8">
         <img src={item.image} alt={item.name} className="zoom-image w-56 h-64 mb-4" />
       </span>
-      <span className='px-6'>
+      <span className='px-6 bg-pink-200'>
         <h1 className="text-2xl font-bold mb-4">{item.name}</h1>
         <p className="text-lg">{item.description}</p>
       </span>

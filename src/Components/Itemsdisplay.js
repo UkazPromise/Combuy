@@ -59,7 +59,7 @@ const Itemsdisplay = () => {
         <Link
           to={`/details/${item.id}`}
           key={item.id}
-          className="rounded border-2 border-black-600 h-72 w-48 space-y-3 bg-pink-100 divide-y-2 overflow-hidden"
+          className="rounded h-72 w-48 space-y-3 bg-pink-400 divide-y-2 overflow-hidden"
         >
           <div>
             <img
